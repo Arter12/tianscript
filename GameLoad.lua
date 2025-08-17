@@ -18,7 +18,7 @@ local Games = {
     [4367208330] = "压力",
     [1840897362] = "火箭发射模拟器",
     [7265785337] = "穷小子打工记"
-
+}
 
 local cloneref = cloneref or function(a) return a end
 local CoreGui = cloneref(game:GetService("CoreGui"))
