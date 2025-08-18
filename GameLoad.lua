@@ -53,7 +53,6 @@ local Games = {
     [2992873140] = "紧急汉堡"
 }
 
-local cloneref = cloneref or function(a) return a end
 local CoreGui = cloneref(game:GetService("CoreGui"))
 
 if not ({...})[1] then
@@ -61,10 +60,7 @@ if not ({...})[1] then
     if name then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Arter12/tianscript/refs/heads/main/Games/"..(name)..".lua"))()
     else
-        local message = Instance.new("Message", CoreGui)
-        message.Text = "此游戏不受支持"
-        task.wait(2)
-        message:destroy()
+        game:GetService("Players").LocalPlayer:Kick("此游戏不受支持")
     end
 end
 
