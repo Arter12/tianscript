@@ -59,7 +59,7 @@ local CoreGui = cloneref(game:GetService("CoreGui"))
 if not ({...})[1] then
     local name = Games[game.GameId]
     if name then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/lyyanai/tianscript/refs/heads/main/Games/"..(name)..".lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Arter12/tianscript/refs/heads/main/Games/"..(name)..".lua"))()
     else
         local message = Instance.new("Message", CoreGui)
         message.Text = "此游戏不受支持"
