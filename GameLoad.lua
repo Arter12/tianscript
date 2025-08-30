@@ -52,7 +52,8 @@ local Games = {
     [7822444776] = "建造一架飞机",
     [2992873140] = "紧急汉堡",
     [4181957649] = "终极战场",
-    [3741075732] = "Chain"
+    [3741075732] = "Chain",
+    [7750955984] = "猎杀僵尸"
 }
 
 local CoreGui = cloneref(game:GetService("CoreGui"))
